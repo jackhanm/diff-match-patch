@@ -1,0 +1,7 @@
+platform :ios, "8.0"
+target :diffMatchPatch do
+
+pod 'Google-Diff-Match-Patch'
+ 
+
+end
