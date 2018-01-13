@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import <DiffMatchPatch.h>
+#import "NSString+WZXSSLTool.h"
+#define FileHashDefaultChunkSizeForReadingData 1024*8
 @interface ViewController ()
 
 @end
@@ -20,10 +22,19 @@
     NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSString *txtPath = [docPath stringByAppendingPathComponent:@"main.jsbundle"]; // 此时仅存在路径，文件并没有真实存在
     NSString *txtPath2 = [docPath stringByAppendingPathComponent:@"main-2.jsbundle"]; // 此时仅存在路径，文件并没有真实存在
-   NSString *jsBundlePath = [[NSBundle mainBundle] pathForResource:@"main" ofType:@"jsbundle"];
-    NSString *jsversionBundlePath2 = [[NSBundle mainBundle] pathForResource:@"main-2" ofType:@"jsbundle"];
+    NSString *txtPathzip = [docPath stringByAppendingPathComponent:@"1801081.zip"]; // 此时仅存在路径，文件并没有真实存在
+     NSString *txtPathpackage = [docPath stringByAppendingPathComponent:@"1801081"]; // 此时仅存在路径，文件并没有真实存在
+    NSString *txtPathpackageold = [docPath stringByAppendingPathComponent:@"归档"]; // 此时仅存在路径，文件并没有真实存在
+   NSString *jsBundlePath = [[NSBundle mainBundle] pathForResource:@"main7" ofType:@"jsbundle"];
+    NSString *jsversionBundlePath2 = [[NSBundle mainBundle] pathForResource:@"main8" ofType:@"jsbundle"];
+    NSString *jsversionBundlePath3 = [[NSBundle mainBundle] pathForResource:@"1801081" ofType:@"zip"];
+     NSString *jsversionBundlePath4 = [[NSBundle mainBundle] pathForResource:@"1801081" ofType:nil];
+      NSString *jsversionBundlePath5 = [[NSBundle mainBundle] pathForResource:@"归档" ofType:@"zip"];
     [[NSFileManager defaultManager] copyItemAtPath:jsBundlePath toPath:txtPath error:nil];
       [[NSFileManager defaultManager] copyItemAtPath:jsversionBundlePath2 toPath:txtPath2 error:nil];
+      [[NSFileManager defaultManager] copyItemAtPath:jsversionBundlePath3 toPath:txtPathzip error:nil];
+      [[NSFileManager defaultManager] copyItemAtPath:jsversionBundlePath4 toPath:txtPathpackage error:nil];
+     [[NSFileManager defaultManager] copyItemAtPath:jsversionBundlePath5 toPath:txtPathpackageold error:nil];
     //
     DiffMatchPatch *dmp = [DiffMatchPatch new];
     
@@ -67,10 +78,17 @@
     [array writeToFile:txtPath atomically:YES];
     NSLog(@"filePath is %@", txtPath);
     
+   NSLog(@"%@", [txtPathzip getFileMD5WithPath:txtPathzip]);
+     NSLog(@"%@", [txtPathpackage getFileMD5WithPath:txtPath2]);
+     NSLog(@"%@", [txtPathpackageold getFileMD5WithPath:txtPath3]);
+    
+  
+    
     
     
     // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 
 - (void)didReceiveMemoryWarning {

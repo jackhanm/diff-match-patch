@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		57A9597A7BF4A27AF042BD62 /* libPods-diffMatchPatch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A85829AA71EF3A2AC512E86A /* libPods-diffMatchPatch.a */; };
-		66002F0220060C560047F60D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66002F0120060C560047F60D /* AppDelegate.m */; };
+		66002F0220060C560047F60D /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 66002F0120060C560047F60D /* AppDelegate.mm */; };
 		66002F0520060C560047F60D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66002F0420060C560047F60D /* ViewController.m */; };
 		66002F0820060C560047F60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66002F0620060C560047F60D /* Main.storyboard */; };
 		66002F0A20060C560047F60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66002F0920060C560047F60D /* Assets.xcassets */; };
@@ -16,8 +16,13 @@
 		66002F1020060C560047F60D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66002F0F20060C560047F60D /* main.m */; };
 		66002F1A20060C560047F60D /* diffMatchPatchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66002F1920060C560047F60D /* diffMatchPatchTests.m */; };
 		66002F2520060C560047F60D /* diffMatchPatchUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66002F2420060C560047F60D /* diffMatchPatchUITests.m */; };
-		66002F43200615AA0047F60D /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 66002F42200615AA0047F60D /* main.jsbundle */; };
-		66002F45200615D20047F60D /* main-2.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 66002F44200615D20047F60D /* main-2.jsbundle */; };
+		6661B22820099A6B00D0D958 /* NSString+WZXSSLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6661B22620099A6B00D0D958 /* NSString+WZXSSLTool.m */; };
+		6661B22A20099A7600D0D958 /* 1801081.zip in Resources */ = {isa = PBXBuildFile; fileRef = 6661B22920099A7600D0D958 /* 1801081.zip */; };
+		6661B22C20099B6C00D0D958 /* 1801081 in Resources */ = {isa = PBXBuildFile; fileRef = 6661B22B20099B6C00D0D958 /* 1801081 */; };
+		6661B22E20099CB600D0D958 /* 归档.zip in Resources */ = {isa = PBXBuildFile; fileRef = 6661B22D20099CB600D0D958 /* 归档.zip */; };
+		6661B244200A06A500D0D958 /* main7.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 6661B243200A06A500D0D958 /* main7.jsbundle */; };
+		6661B248200A06BC00D0D958 /* main81.jsbundle.meta in Resources */ = {isa = PBXBuildFile; fileRef = 6661B247200A06BC00D0D958 /* main81.jsbundle.meta */; };
+		6661B24A200A073A00D0D958 /* main8.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 6661B249200A073A00D0D958 /* main8.jsbundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,7 @@
 		3D107395C7FC939B68834A8B /* Pods-diffMatchPatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diffMatchPatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diffMatchPatch/Pods-diffMatchPatch.debug.xcconfig"; sourceTree = "<group>"; };
 		66002EFD20060C560047F60D /* diffMatchPatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diffMatchPatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66002F0020060C560047F60D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		66002F0120060C560047F60D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		66002F0120060C560047F60D /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		66002F0320060C560047F60D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		66002F0420060C560047F60D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		66002F0720060C560047F60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -56,8 +61,14 @@
 		66002F2020060C560047F60D /* diffMatchPatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = diffMatchPatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66002F2420060C560047F60D /* diffMatchPatchUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = diffMatchPatchUITests.m; sourceTree = "<group>"; };
 		66002F2620060C560047F60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66002F42200615AA0047F60D /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; name = main.jsbundle; path = diffMatchPatch/main/main.jsbundle; sourceTree = "<group>"; };
-		66002F44200615D20047F60D /* main-2.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; name = "main-2.jsbundle"; path = "diffMatchPatch/main-2/main-2.jsbundle"; sourceTree = "<group>"; };
+		6661B22620099A6B00D0D958 /* NSString+WZXSSLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WZXSSLTool.m"; sourceTree = "<group>"; };
+		6661B22720099A6B00D0D958 /* NSString+WZXSSLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WZXSSLTool.h"; sourceTree = "<group>"; };
+		6661B22920099A7600D0D958 /* 1801081.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = 1801081.zip; path = diffMatchPatch/1801081.zip; sourceTree = "<group>"; };
+		6661B22B20099B6C00D0D958 /* 1801081 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 1801081; sourceTree = "<group>"; };
+		6661B22D20099CB600D0D958 /* 归档.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "归档.zip"; sourceTree = "<group>"; };
+		6661B243200A06A500D0D958 /* main7.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main7.jsbundle; path = diffMatchPatch/180107/main7.jsbundle; sourceTree = "<group>"; };
+		6661B247200A06BC00D0D958 /* main81.jsbundle.meta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main81.jsbundle.meta; path = diffMatchPatch/1801081All/main81.jsbundle.meta; sourceTree = "<group>"; };
+		6661B249200A073A00D0D958 /* main8.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = main8.jsbundle; path = diffMatchPatch/180108/main8.jsbundle; sourceTree = "<group>"; };
 		A85829AA71EF3A2AC512E86A /* libPods-diffMatchPatch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-diffMatchPatch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,8 +101,12 @@
 		66002EF420060C560047F60D = {
 			isa = PBXGroup;
 			children = (
-				66002F44200615D20047F60D /* main-2.jsbundle */,
-				66002F42200615AA0047F60D /* main.jsbundle */,
+				6661B249200A073A00D0D958 /* main8.jsbundle */,
+				6661B247200A06BC00D0D958 /* main81.jsbundle.meta */,
+				6661B243200A06A500D0D958 /* main7.jsbundle */,
+				6661B22B20099B6C00D0D958 /* 1801081 */,
+				6661B22920099A7600D0D958 /* 1801081.zip */,
+				6661B22D20099CB600D0D958 /* 归档.zip */,
 				66002EFF20060C560047F60D /* diffMatchPatch */,
 				66002F1820060C560047F60D /* diffMatchPatchTests */,
 				66002F2320060C560047F60D /* diffMatchPatchUITests */,
@@ -114,8 +129,10 @@
 		66002EFF20060C560047F60D /* diffMatchPatch */ = {
 			isa = PBXGroup;
 			children = (
+				6661B22720099A6B00D0D958 /* NSString+WZXSSLTool.h */,
+				6661B22620099A6B00D0D958 /* NSString+WZXSSLTool.m */,
 				66002F0020060C560047F60D /* AppDelegate.h */,
-				66002F0120060C560047F60D /* AppDelegate.m */,
+				66002F0120060C560047F60D /* AppDelegate.mm */,
 				66002F0320060C560047F60D /* ViewController.h */,
 				66002F0420060C560047F60D /* ViewController.m */,
 				66002F0620060C560047F60D /* Main.storyboard */,
@@ -271,10 +288,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66002F45200615D20047F60D /* main-2.jsbundle in Resources */,
-				66002F43200615AA0047F60D /* main.jsbundle in Resources */,
+				6661B244200A06A500D0D958 /* main7.jsbundle in Resources */,
 				66002F0D20060C560047F60D /* LaunchScreen.storyboard in Resources */,
+				6661B22A20099A7600D0D958 /* 1801081.zip in Resources */,
+				6661B24A200A073A00D0D958 /* main8.jsbundle in Resources */,
 				66002F0A20060C560047F60D /* Assets.xcassets in Resources */,
+				6661B22C20099B6C00D0D958 /* 1801081 in Resources */,
+				6661B22E20099CB600D0D958 /* 归档.zip in Resources */,
+				6661B248200A06BC00D0D958 /* main81.jsbundle.meta in Resources */,
 				66002F0820060C560047F60D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,9 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6661B22820099A6B00D0D958 /* NSString+WZXSSLTool.m in Sources */,
 				66002F0520060C560047F60D /* ViewController.m in Sources */,
 				66002F1020060C560047F60D /* main.m in Sources */,
-				66002F0220060C560047F60D /* AppDelegate.m in Sources */,
+				66002F0220060C560047F60D /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
